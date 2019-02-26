@@ -1,15 +1,14 @@
-# PHP Analysis
-
-> PHP7 源码探究，让你更懂 PHP。
-
-## 章节目录
-
-PHP7 的源码很庞大，这儿我们由浅入深的进行探究。
-
-### 第一章：准备工作
-
-介绍查看源码用到的工具，源码目录结构，以及安装环境等。
-
-### 第二章：初探源码
-
-针对 PHP7 和 PHP5 进行对比，了解 PHP7 的性能以及基本的调试手段。
+---
+home: true
+heroImage: /logo.png
+actionText: 劝退工作 →
+actionLink: /prepare/
+features:
+- title: 由浅入深
+  details: 一点点的深入，从最简单的方式入手，一点点儿带你了解并且深入。
+- title: 代码驱动
+  details: 所有的测试以及调试用例，都会在在源码目录中存档，用代码来推动学习，不是单纯的理论输出。
+- title: 学以致用
+  details: 这个源码分析，也是为了更好的服务于项目，让所有的问题可以追本溯源，同时这也是该项目的初衷。
+footer: Copyright © 2019-present Master Shu
+---
