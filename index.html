@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>PHP Anaylsis</title>
+    <meta name="description" content="PHP7 源码探究">
+    <link rel="icon" href="/favicon.ico">
+  <meta name="theme-color" content="#3eaf7c">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    
+    <link rel="preload" href="/assets/css/0.styles.b730d4bd.css" as="style"><link rel="preload" href="/assets/js/app.f3c4f1f8.js" as="script"><link rel="preload" href="/assets/js/3.e4243c02.js" as="script"><link rel="prefetch" href="/assets/js/2.7974f97d.js"><link rel="prefetch" href="/assets/js/4.ac3cfd4a.js"><link rel="prefetch" href="/assets/js/5.bf997e63.js"><link rel="prefetch" href="/assets/js/6.17110acb.js"><link rel="prefetch" href="/assets/js/7.74d6183a.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.b730d4bd.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-exact-active router-link-active"><!----> <span class="site-name">PHP Anaylsis</span></a> <div class="links" style="max-width:nullpx;"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">选择语言</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/" class="nav-link router-link-exact-active router-link-active">简体中文</a></li><li class="dropdown-item"><!----> <a href="/en/" class="nav-link">English</a></li></ul></div></div> <a href="https://github.com/MasterShu/php-analysis" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav></div></header> <div class="sidebar-mask"></div> <div class="sidebar"><nav class="nav-links"><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">选择语言</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/" class="nav-link router-link-exact-active router-link-active">简体中文</a></li><li class="dropdown-item"><!----> <a href="/en/" class="nav-link">English</a></li></ul></div></div> <a href="https://github.com/MasterShu/php-analysis" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav>  <!----> </div> <div class="home"><div class="hero"><img src="/logo.png" alt="hero"> <h1>PHP Anaylsis</h1> <p class="description">
+      PHP7 源码探究
+    </p> <p class="action"><a href="/prepare/" class="nav-link action-button">劝退工作 →</a></p></div> <div class="features"><div class="feature"><h2>由浅入深</h2> <p>一点点的深入，从最简单的方式入手，一点点儿带你了解并且深入。</p></div><div class="feature"><h2>代码驱动</h2> <p>所有的测试以及调试用例，都会在在源码目录中存档，用代码来推动学习，不是单纯的理论输出。</p></div><div class="feature"><h2>学以致用</h2> <p>这个源码分析，也是为了更好的服务于项目，让所有的问题可以追本溯源，同时这也是该项目的初衷。</p></div></div> <div class="content custom"></div> <div class="footer">
+    Copyright © 2019-present Master Shu
+  </div></div> <!----></div></div>
+    <script src="/assets/js/app.f3c4f1f8.js" defer></script><script src="/assets/js/3.e4243c02.js" defer></script>
+  </body>
+</html>
